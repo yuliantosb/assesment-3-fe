@@ -62,7 +62,7 @@ function Buku() {
                                 <tr key={buku.id}>
                                     <td>{buku.nama}</td>
                                     <td>{buku.rak}</td>
-                                    <td>{buku.stok}</td>
+                                    <td>{buku.stok -  buku.pinjam.length}</td>
                                     <td>
                                         <Fragment>
                                             <Link to={`/buku/ubah/${buku.id}`}><button>Ubah</button></Link>

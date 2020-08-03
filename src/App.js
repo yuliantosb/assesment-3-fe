@@ -23,9 +23,7 @@ function App(props) {
             </Route>
             <Route exact path="/buku/tambah" component={(props) => <TambahBuku {...props} />} />
             <Route exact path="/buku/ubah/:id" component={(props) => <UbahBuku {...props} />} />
-            <Route exact path="/pinjam">
-              <Pinjam />
-            </Route>
+            <Route exact path="/pinjam" component={(props) => <Pinjam {...props} />} />
             <Route exact path="/anggota">
               <Anggota />
             </Route>
